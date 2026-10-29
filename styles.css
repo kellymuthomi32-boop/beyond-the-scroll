@@ -45,3 +45,8 @@
 .featured-videos .video-frame iframe{width:100%;height:100%;display:block;border:0}
 .featured-videos .video-embed-card .btn{align-self:stretch;justify-content:center;margin-top:auto}
 @media(max-width:680px){.featured-videos{grid-template-columns:minmax(0,1fr);gap:22px}.featured-videos .video-embed-card{padding:16px}.featured-videos .video-frame{width:min(100%,340px)}.featured-videos .video-embed-card strong{min-height:0}}
+
+/* Discovery drawer share actions */
+.drawer-share{display:flex;gap:9px;flex-wrap:wrap;margin:14px 0 20px}
+.drawer-share .btn{font-size:12px;padding:9px 13px}
+@media(max-width:420px){.drawer-share{display:grid;grid-template-columns:1fr}.drawer-share .btn{width:100%}}
