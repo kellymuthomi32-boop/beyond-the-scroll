@@ -34,3 +34,14 @@
 
 /* Real scientific images and daily-fact imagery */
 .image-credit{position:absolute;z-index:4;left:12px;bottom:9px;max-width:calc(100% - 24px);font-size:9px;line-height:1.35;color:#fff;background:#001020d9;border:1px solid #ffffff30;border-radius:7px;padding:4px 7px}.image-credit:hover,.daily-fact-credit a:hover{color:var(--accent-gold);text-decoration:underline}.hero-art:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,#00102020 15%,#00102090 100%);pointer-events:none;z-index:0}.hero-earth{z-index:-1}.daily-fact-media{position:relative;overflow:hidden;border-radius:18px;min-height:190px;aspect-ratio:4/3;border:1px solid var(--line);background:#03182e;box-shadow:0 12px 35px #0004}.daily-fact-photo{display:block;width:100%;height:100%;min-height:190px;max-height:260px;object-fit:cover;border-radius:18px}.daily-fact-media:after{content:"";position:absolute;inset:45% 0 0;background:linear-gradient(transparent,#001020a8);pointer-events:none}.daily-fact-credit{position:absolute;z-index:2;left:9px;right:9px;bottom:8px;text-align:left;font-size:9px;line-height:1.35;color:#fff}.daily-fact-credit a{display:inline-block;padding:4px 6px;border-radius:6px;background:#001020d9;border:1px solid #ffffff30}@media(max-width:640px){.factbox{grid-template-columns:1fr;padding:20px}.daily-fact-media{max-width:100%;aspect-ratio:16/10}.daily-fact-photo{max-height:230px}.image-credit{font-size:8px}}
+
+
+/* Featured Shorts: two portrait cards on desktop, stacked on mobile */
+.featured-videos{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:28px;overflow:visible;align-items:start;padding:0 0 12px;scroll-snap-type:none}
+.featured-videos .video-embed-card{width:100%;min-width:0;flex:none;aspect-ratio:auto;justify-content:flex-start;gap:14px;padding:18px;background:linear-gradient(160deg,#17344a,#031020 76%)}
+.featured-videos .video-embed-card small{display:block;letter-spacing:.1em;font-size:10px;line-height:1.5}
+.featured-videos .video-embed-card strong{font:600 clamp(18px,2vw,24px)/1.25 var(--serif);color:#fff;min-height:2.5em}
+.featured-videos .video-frame{width:min(100%,360px);aspect-ratio:9/16;height:auto;max-height:none;margin:0 auto 2px;border:1px solid #ffffff20;border-radius:16px;box-shadow:0 12px 32px #0004}
+.featured-videos .video-frame iframe{width:100%;height:100%;display:block;border:0}
+.featured-videos .video-embed-card .btn{align-self:stretch;justify-content:center;margin-top:auto}
+@media(max-width:680px){.featured-videos{grid-template-columns:minmax(0,1fr);gap:22px}.featured-videos .video-embed-card{padding:16px}.featured-videos .video-frame{width:min(100%,340px)}.featured-videos .video-embed-card strong{min-height:0}}
